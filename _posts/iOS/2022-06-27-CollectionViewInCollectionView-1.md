@@ -222,7 +222,7 @@ extension IssueCollectionCell: UICollectionViewDelegateFlowLayout {
 
 ---
 
-(길이가 너무 길어져, [2편](https://hansolkkim.github.io/posts/CollectionViewInCollectionView-2.md)에서 마저 작성하겠습니다! 2편에는 CollectionView Dynamic Height를 중점으로 작성합니다.)
+(길이가 너무 길어져, [2편](https://hansolkkim.github.io/posts/CollectionViewInCollectionView-2)에서 마저 작성하겠습니다! 2편에는 CollectionView Dynamic Height를 중점으로 작성합니다.)
 
 ## 5. 참고 자료
 
