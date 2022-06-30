@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iOS의 Layout
-date: '2022-06-30 17:43:10 +0900'
+date: '2022-06-30 21:43:00 +0900'
 categories: [iOS]
 tags: [iOS, View, Layout, Update-Cycle]
 
