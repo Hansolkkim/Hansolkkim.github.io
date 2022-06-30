@@ -9,7 +9,7 @@ tags: [iOS, CollectionView, dynamic, roundedLabel]
 
 
 
-(앞서 작성했던 [1편](https://hansolkkim.github.io/CollectionViewInCollectionView-1.md)에 이어 작성되었습니다.)
+(앞서 작성했던 [1편](https://hansolkkim.github.io/posts/CollectionViewInCollectionView-1)에 이어 작성되었습니다.)
 
 ## 4. 문제 해결
 
