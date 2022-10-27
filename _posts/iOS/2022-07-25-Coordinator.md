@@ -236,7 +236,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ### 5. 동작 화면
 
-|                등록된 카드가 존재하지 않을 때                |                   등록된 카드가 존재할 때                    |
+|                   등록된 카드가 존재할 때                    |                등록된 카드가 존재하지 않을 때                |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![SS2022-10-26PM04.23.08](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202210261624159.gif) | ![SS2022-10-26PM04.24.38](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202210261625922.gif) |
 
