@@ -171,3 +171,11 @@ CGAffineTransform 구조체가 제공해주는 인스턴스 메소드는 위와 
 `concatenating(_:)` 는 <u>여러 CGAffineTransform의 변환 행렬들을 곱</u>하여 새로운 변환 행렬을 가지는 CGAffineTransform을 만들어주는 메소드입니다.
 
 **행렬의 곱셈**은 교환 법칙이 성립하지 않습니다. 따라서 `concatenating(_:)` 메소드를 이용하여 새로운 변환 행렬을 만들고자 할 때는 CGAffineTransform 객체들의 순서를 생각하여야 합니다.
+
+
+
+### 참고 자료
+
+[[Apple-Developer-CGAffineTransform]](https://developer.apple.com/documentation/corefoundation/cgaffinetransform)
+
+[[MathWorks-Affine Transform]](https://kr.mathworks.com/discovery/affine-transformation.html)
