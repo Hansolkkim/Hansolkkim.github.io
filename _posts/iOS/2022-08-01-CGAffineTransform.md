@@ -25,18 +25,15 @@ View를 직접 이동시키기위해서 Constraints를 업데이트하는 방법
 
 | 아핀 변환 |                              예                              | 변환 행렬                                                    | 설명                                                         |
 | :-------: | :----------------------------------------------------------: | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 평행이동  | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021351991.jpg" alt="SS2022-11-02PM01.51.37" width="20%;" /> | $\begin{bmatrix}1&0&0\\0&1&0\\t_x&t_y&1\\ \end{bmatrix}$     | t<sub>x</sub>는 x축 방향 변위를, <br />t<sub>y</sub>는 y축 방향 변위를 나타냄 |
-| 스케일링  | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021350545.jpg" alt="SS2022-11-02PM01.50.12" width="20%;" /> | $\begin{bmatrix}s_x&0&0\\0&s_y&0\\0&0&1\\ \end{bmatrix}$     | s<sub>x</sub>는 x축에서의 스케일링 인자를, <br />s<sub>y</sub>는 y축에서의 스케일링 인자를 나타냄. |
-|   회전    | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021350772.jpg" alt="SS2022-11-02PM01.50.39" width="20%;" /> | $\begin{bmatrix}cos(a)&sin(a)&0\\-sin(a)&cos(a)&0\\0&0&1\\ \end{bmatrix}$ | a는 회전 각도를 나타냄.                                      |
+| 평행이동  | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021351991.jpg" alt="SS2022-11-02PM01.51.37" width="60%;" /> | ![SS2022-11-04PM03.04.18](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211041504768.jpg) | t<sub>x</sub>는 x축 방향 변위를, <br />t<sub>y</sub>는 y축 방향 변위를 나타냄 |
+| 스케일링  | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021350545.jpg" alt="SS2022-11-02PM01.50.12" width="60%;" /> | ![SS2022-11-04PM03.04.30](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211041504649.jpg) | s<sub>x</sub>는 x축에서의 스케일링 인자를, <br />s<sub>y</sub>는 y축에서의 스케일링 인자를 나타냄. |
+|   회전    | <img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211021350772.jpg" alt="SS2022-11-02PM01.50.39" width="60%;" /> | ![SS2022-11-04PM03.04.42](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211041504014.jpg) | a는 회전 각도를 나타냄.                                      |
 
 위에서 주어진 <u>**변환 행렬**</u>을 이용해 기존의 점, 직선, 평면을 계산하게 됩니다.
 
 기존의 점을 $(x, y, 1)$, 아핀 변환 중 2배 스케일링 변환된 점을 $(x’, y’, 1)$이라고 할 때, $(x’, y’, 1)$은 아래의 수식으로 구할 수 있습니다.
-$$
-(x', y', 1) = (x, y, 1)\;\times\;\begin{bmatrix}2&0&0\\0&2&0\\0&0&1\ \end{bmatrix}
-\\
-x' = 2x,\;\;\; y' = 2y
-$$
+
+<img src="https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211041503804.jpg" alt="SS2022-11-04PM03.03.40" style="zoom:60%;" />
 
 
 
@@ -67,6 +64,8 @@ $$
 
      <details>
          <summary>코드 확인</summary>
+     
+
 
      ```swift
      func rotateButtonDidTap() {
@@ -86,6 +85,10 @@ $$
      }
      ```
 
+     
+
+     
+
      </details>
 
      
@@ -98,6 +101,8 @@ $$
 
      <details>
          <summary>코드 확인</summary>
+     
+
 
      ```swift
      func scaleButtonDidTap() {
@@ -117,6 +122,10 @@ $$
      }
      ```
 
+     
+
+     
+
      </details>
 
 3.   `init(translationX:y:)` 초기화 생성자 사용 예시
@@ -127,7 +136,9 @@ $$
 
      <details>
          <summary>코드 확인</summary>
-
+     ​    
+     
+     
      ```swift
      func translateButtonDidTap() {
          if didTranslate {
@@ -146,8 +157,12 @@ $$
      }
      ```
 
+     
+     
+     
+     
      </details>
-
+     
      
 
 ![SS2022-11-04PM12.03.47](https://raw.githubusercontent.com/Hansolkkim/Image-Upload/forUpload/img/202211041203600.jpg)
@@ -158,7 +173,7 @@ $$
 
 ```swift
 UIView.animte(withDuration: 0.5) {
-    self.View.transform = .identity
+    self.view.transform = .identity
 }
 ```
 
