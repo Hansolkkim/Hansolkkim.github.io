@@ -1,5 +1,5 @@
 ---
-alayout: post
+layout: post
 title: CGAffineTransform에 대해
 date:'2022-08-01 22:43:10 +0900'
 categories: [iOS]
